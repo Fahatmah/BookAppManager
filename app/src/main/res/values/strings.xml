@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Book App Manager</string>
     <string name="app_name_logo">BookAppManager</string>
+    <string name="testTxt">This is a test file.</string>
 </resources>
