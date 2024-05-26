@@ -3,8 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#5e17eb</color>
+    <color name="hintPurple">#915E17EB</color>
     <color name="white_01">#cfcfcf</color>
     <color name="white_02">#d4d4d4</color>
     <color name="light_purple">#301f52</color>
-    <color name="transparent">#80000000</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>

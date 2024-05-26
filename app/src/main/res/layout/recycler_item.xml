@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recycleItemCard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="20dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/recycleBookCover"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/atomic_habits"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+        <TextView
+            android:id="@+id/recycleBookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="TitleTitleTitleTitleTitleTitleTitleTitleTitleTitle"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple"
+            android:layout_toEndOf="@id/recycleBookCover"
+            android:layout_marginStart="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/recycleBookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycleBookTitle"
+            android:layout_toEndOf="@id/recycleBookCover"
+            android:layout_marginStart="20dp"
+            android:text="AuthorAuthorAuthorAuthorAuthorAuthorAuthorAuthor"
+            android:textAlignment="center"
+            android:textColor="@color/light_purple"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/recycleBookDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:layout_toEndOf="@id/recycleBookCover"
+            android:layout_below="@id/recycleBookAuthor"
+            android:layout_marginStart="20dp"
+            android:maxLines="1"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

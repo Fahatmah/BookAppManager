@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openViewActivity() {
-        Intent i = new Intent(this, LoginActivity.class);
+        Intent i = new Intent(this, BooksActivity.class);
         startActivity(i);
         finish();
     }

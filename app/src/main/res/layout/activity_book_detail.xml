@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/book_details"
+    tools:context=".BookDetailActivity">
+
+    <!-- Book Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/purple"
+        android:orientation="horizontal">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_icon"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Book Title"
+            android:textColor="@color/white"
+            android:fontFamily="@font/space_grotesk_semibold"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/app_logo_white"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bookCover"
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/atomic_habits"
+                    android:contentDescription="book cover" />
+
+                <TextView
+                    android:id="@+id/bookName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Book Title"
+                    android:textColor="@color/purple"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/space_grotesk_semibold"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_purple"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:alpha="0.3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginHorizontal="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="AUTHOR"
+                        android:textColor="@color/light_purple" />
+
+                    <TextView
+                        android:id="@+id/bookAuthor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Author Name"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DESCRIPTION"
+                        android:textColor="@color/light_purple" />
+
+                    <TextView
+                        android:id="@+id/bookDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/purple" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            app:menu_colorNormal="@color/transparent"
+            app:menu_colorPressed="@color/light_purple"
+            app:menu_fab_size="mini"
+            app:menu_icon="@drawable/menu"
+            app:menu_showShadow="false"
+            app:menu_openDirection="down">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/editButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit"
+                app:fab_label="edit"
+                app:fab_colorNormal="@color/transparent"
+                app:fab_colorPressed="@color/light_purple"
+                app:fab_showShadow="false"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/delete"
+                app:fab_label="delete"
+                app:fab_colorNormal="@color/transparent"
+                app:fab_colorPressed="@color/light_purple"
+                app:fab_showShadow="false"
+                app:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+</LinearLayout>

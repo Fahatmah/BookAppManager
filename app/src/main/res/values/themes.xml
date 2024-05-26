@@ -2,13 +2,20 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.BookAppManager" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/hintPurple</item>
         <item name="android:fontFamily">@font/space_grotesk_regular</item>
+        <item name="android:statusBarColor">@color/purple</item>
     </style>
 
     <style name="Theme.BookAppManager" parent="Base.Theme.BookAppManager" />
     <style name="SlideActivityAnimation" parent="android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
         <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
 </resources>

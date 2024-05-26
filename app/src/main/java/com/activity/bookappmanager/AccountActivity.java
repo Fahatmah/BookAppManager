@@ -20,7 +20,7 @@ public class AccountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_account);
 
         BottomNavigationView tabBar = findViewById(R.id.tabNavigationView);
-        tabBar.setSelectedItemId(R.id.accountTab);
+//        tabBar.setSelectedItemId(R.id.accountTab);
 
         tabBar.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
@@ -34,14 +34,15 @@ public class AccountActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 return true;
-            } else if (itemId == R.id.starredBooksTab) {
-                startActivity(new Intent(getApplicationContext(), StarredBooksActivity.class));
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-                finish();
-                return true;
-            } else if (itemId == R.id.accountTab) {
-                return true;
             }
+//            else if (itemId == R.id.starredBooksTab) {
+//                startActivity(new Intent(getApplicationContext(), StarredBooksActivity.class));
+//                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                finish();
+//                return true;
+//            } else if (itemId == R.id.accountTab) {
+//                return true;
+//            }
             return false;
         });
 
