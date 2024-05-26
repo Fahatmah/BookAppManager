@@ -10,14 +10,14 @@
         android:icon="@drawable/add_book"
         android:title="Add"
         />
-    <item
-        android:id="@+id/starredBooksTab"
-        android:icon="@drawable/starred"
-        android:title="Starred"
-        />
-    <item
-        android:id="@+id/accountTab"
-        android:icon="@drawable/account"
-        android:title="Account"
-        />
+<!--    <item-->
+<!--        android:id="@+id/starredBooksTab"-->
+<!--        android:icon="@drawable/starred"-->
+<!--        android:title="Starred"-->
+<!--        />-->
+<!--    <item-->
+<!--        android:id="@+id/accountTab"-->
+<!--        android:icon="@drawable/account"-->
+<!--        android:title="Account"-->
+<!--        />-->
 </menu>

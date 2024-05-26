@@ -20,7 +20,7 @@ public class StarredBooksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_starred_books);
 
         BottomNavigationView tabBar = findViewById(R.id.tabNavigationView);
-        tabBar.setSelectedItemId(R.id.starredBooksTab);
+//        tabBar.setSelectedItemId(R.id.starredBooksTab);
 
         tabBar.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
@@ -34,14 +34,15 @@ public class StarredBooksActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 return true;
-            } else if (itemId == R.id.starredBooksTab) {
-                return true;
-            } else if (itemId == R.id.accountTab) {
-                startActivity(new Intent(getApplicationContext(), AccountActivity.class));
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-                finish();
-                return true;
             }
+//            else if (itemId == R.id.starredBooksTab) {
+//                return true;
+//            } else if (itemId == R.id.accountTab) {
+//                startActivity(new Intent(getApplicationContext(), AccountActivity.class));
+//                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//                finish();
+//                return true;
+//            }
             return false;
         });
 

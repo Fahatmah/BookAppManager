@@ -6,51 +6,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BooksActivity">
-    
+
+    <!-- Header -->
     <LinearLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:background="@color/purple"
-        >
-        
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/app_logo_white"
-            android:layout_gravity="center_vertical"
-            />
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="305dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Books"
             android:textColor="@color/white"
             android:fontFamily="@font/space_grotesk_semibold"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_gravity="center_vertical"
             />
-        
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
         <ImageView
-            android:id="@+id/searchButton"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/search_white"
-            android:layout_gravity="center_vertical"
-            />
-        
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/app_logo_white"
+            android:layout_gravity="center_vertical" />
+
     </LinearLayout>
 
-    <TextView
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:iconifiedByDefault="false"
+        app:searchHintIcon="@null"
+        app:queryHint="Search..."
+        android:focusable="false"
+        app:closeIcon="@drawable/exit"
+        app:searchIcon="@drawable/search_white"
+        android:background="@drawable/border_purple"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/booksRecyclerView"
+        android:layout_below="@id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabNavigationView"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addBookButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Books"
-        android:textColor="@color/purple"
-        android:fontFamily="@font/space_grotesk_bold"
-        android:textSize="32sp"
-        android:layout_centerInParent="true"
-        />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="110dp"
+        android:backgroundTint="@color/purple"
+        app:tint = "@color/white"
+        android:src="@drawable/add_book" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/tabNavigationView"
