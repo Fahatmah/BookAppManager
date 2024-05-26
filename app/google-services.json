@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "806483005448",
+    "project_id": "bookappmanager",
+    "storage_bucket": "bookappmanager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806483005448:android:d27adba2cfcedcb39041bd",
+        "android_client_info": {
+          "package_name": "com.activity.bookappmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAmWh-mWpXCWKyDorM3IcXxJrV_FxcW3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
