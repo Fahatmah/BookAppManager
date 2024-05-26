@@ -24,7 +24,6 @@
             android:layout_height="60dp"
             android:layout_centerVertical="true"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/atomic_habits"
             app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
 
         <TextView
@@ -32,8 +31,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="TitleTitleTitleTitleTitleTitleTitleTitleTitleTitle"
-            android:textSize="18dp"
+            android:text="@string/recTitle"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/purple"
             android:layout_toEndOf="@id/recycleBookCover"
@@ -48,7 +47,7 @@
             android:layout_below="@id/recycleBookTitle"
             android:layout_toEndOf="@id/recycleBookCover"
             android:layout_marginStart="20dp"
-            android:text="AuthorAuthorAuthorAuthorAuthorAuthorAuthorAuthor"
+            android:text="@string/recAuthor"
             android:textAlignment="center"
             android:textColor="@color/light_purple"
             android:textSize="14sp"
@@ -59,7 +58,6 @@
             android:id="@+id/recycleBookDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Description"
             android:textColor="@color/purple"
             android:textSize="14sp"
             android:layout_toEndOf="@id/recycleBookCover"

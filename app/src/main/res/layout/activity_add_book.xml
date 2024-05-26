@@ -13,7 +13,6 @@
         android:orientation="vertical"
         android:layout_above="@id/tabNavigationView">
 
-        <!-- Main content inside ScrollView -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -34,14 +33,14 @@
                     android:layout_height="30dp"
                     android:src="@drawable/back_icon"
                     android:layout_gravity="center_vertical"
-                    android:contentDescription="Back"
+                    android:contentDescription="@string/backButton"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Add New Book"
+                    android:text="@string/addBookHeader"
                     android:textColor="@color/white"
                     android:fontFamily="@font/space_grotesk_semibold"
                     android:textSize="20sp"
@@ -56,10 +55,10 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/app_logo_white"
-                    android:layout_gravity="center_vertical" />
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"/>
 
             </LinearLayout>
-
 
             <!-- Book Name Field -->
             <LinearLayout
@@ -74,7 +73,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Book Name"
+                    android:text="@string/labelAddBookName"
                     android:layout_marginBottom="5dp"
                     android:textColor="@color/purple" />
 
@@ -83,7 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="12dp"
-                    android:hint="e.g. Atomic Habits"
+                    android:hint="@string/hintAddBookName"
                     android:textColorHint="@color/hintPurple"
                     android:textColor="@color/purple"
                     android:background="@drawable/border_purple" />
@@ -103,7 +102,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Book Description"
+                    android:text="@string/labelAddBookDesc"
                     android:layout_marginBottom="5dp"
                     android:textColor="@color/purple" />
 
@@ -112,7 +111,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="12dp"
-                    android:hint="e.g. Provides a comprehensive guide on how to build good habits and break bad ones through small, incremental changes that compound over time to produce remarkable results."
+                    android:hint="@string/hintAddBookDesc"
                     android:textColorHint="@color/hintPurple"
                     android:textColor="@color/purple"
                     android:gravity="top"
@@ -133,7 +132,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Book Author"
+                    android:text="@string/labelAddBookAuthor"
                     android:layout_marginBottom="5dp"
                     android:textColor="@color/purple" />
 
@@ -142,7 +141,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="12dp"
-                    android:hint="e.g. James Clear"
+                    android:hint="@string/hintAddBookAuthor"
                     android:textColorHint="@color/hintPurple"
                     android:textColor="@color/purple"
                     android:background="@drawable/border_purple" />
@@ -162,7 +161,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Add Book Cover"
+                    android:hint="@string/labelAddBookCover"
                     android:textColorHint="@color/purple"
                     android:layout_marginBottom="5dp"
                     android:textColor="@color/purple" />
@@ -172,6 +171,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:background="@drawable/border_purple"
+                    android:contentDescription="@string/hintAddBookCover"
                     />
 
             </LinearLayout>
@@ -184,9 +184,10 @@
                 android:layout_below="@id/bookCoverField"
                 android:layout_marginTop="10dp"
                 android:layout_marginHorizontal="20dp"
-                android:text="Save"
+                android:text="@string/addBookButton"
                 android:textColor="@color/white"
                 android:textSize="18sp"
+                android:textStyle="bold"
                 app:cornerRadius="6dp" />
 
         </RelativeLayout>

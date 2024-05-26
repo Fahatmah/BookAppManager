@@ -29,14 +29,14 @@
                 android:layout_height="30dp"
                 android:src="@drawable/back_icon"
                 android:layout_gravity="center_vertical"
-                android:contentDescription="Back"
+                android:contentDescription="@string/backButton"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
-                android:text="Edit Book"
+                android:text="@string/updateBookDetailHeader"
                 android:textColor="@color/white"
                 android:fontFamily="@font/space_grotesk_semibold"
                 android:textSize="20sp"
@@ -51,7 +51,8 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/app_logo_white"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"/>
 
         </LinearLayout>
 
@@ -62,37 +63,82 @@
             android:orientation="vertical"
             android:layout_margin="20dp">
 
-            <EditText
-                android:id="@+id/updateBookTitle"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/border_purple"
-                android:padding="16dp"
-                android:hint="Edit Book Title"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/purple"/>
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/updateBookDesc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:padding="16dp"
-                android:hint="Edit Book Description"
-                android:textColor="@color/purple"
-                android:gravity="top"
-                android:background="@drawable/border_purple" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/labelUpdateBookName"
+                    android:textColorHint="@color/purple"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/purple" />
 
-            <EditText
-                android:id="@+id/updateBookAuthor"
+                <EditText
+                    android:id="@+id/updateBookTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_purple"
+                    android:padding="16dp"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/purple"
+                    android:hint="@string/hintUpdateBookTitle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/border_purple"
-                android:layout_marginTop="20dp"
-                android:padding="16dp"
-                android:hint="Edit Book Author Name"
-                android:gravity="start|center_vertical"
-                android:textColor="@color/purple"/>
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/labelUpdateBookDesc"
+                    android:textColorHint="@color/purple"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/purple" />
+
+                <EditText
+                    android:id="@+id/updateBookDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textColor="@color/purple"
+                    android:gravity="top"
+                    android:background="@drawable/border_purple"
+                    android:hint="@string/hintUpdateBookDesc"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/labelUpdateBookAuthor"
+                    android:textColorHint="@color/purple"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/purple" />
+
+                <EditText
+                    android:id="@+id/updateBookAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_purple"
+                    android:padding="16dp"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/purple"
+                    android:hint="@string/hintUpdateBookAuthor"/>
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -104,7 +150,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Add Book Cover"
+                    android:hint="@string/labelUpdateBookCover"
                     android:textColorHint="@color/purple"
                     android:layout_marginBottom="5dp"
                     android:textColor="@color/purple" />
@@ -114,6 +160,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:background="@drawable/border_purple"
+                    android:contentDescription="@string/hintUpdateBookCover"
                     />
 
             </LinearLayout>
@@ -124,7 +171,7 @@
                 android:layout_height="60dp"
                 android:background="@drawable/purple_bg"
                 android:layout_marginTop="10dp"
-                android:text="Update Book"
+                android:text="@string/updateBookButton"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:cornerRadius="6dp" />

@@ -74,17 +74,6 @@ public class AddBookActivity extends AppCompatActivity {
             } else if (itemId == R.id.addBooksTab) {
                 return true;
             }
-//            else if (itemId == R.id.starredBooksTab) {
-//                startActivity(new Intent(getApplicationContext(), StarredBooksActivity.class));
-//                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-//                finish();
-//                return true;
-//            } else if (itemId == R.id.accountTab) {
-//                startActivity(new Intent(getApplicationContext(), AccountActivity.class));
-//                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-//                finish();
-//                return true;
-//            }
             return false;
         });
 

@@ -28,14 +28,6 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.activity.bookappmanager.service.GoogleBooksService;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-
-
 public class BooksActivity extends AppCompatActivity {
 
 //    private static final String TAG = "BooksActivity";
@@ -81,17 +73,6 @@ public class BooksActivity extends AppCompatActivity {
                 finish();
                 return true;
             }
-//            else if (itemId == R.id.starredBooksTab) {
-//                startActivity(new Intent(getApplicationContext(), StarredBooksActivity.class));
-//                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-//                finish();
-//                return true;
-//            } else if (itemId == R.id.accountTab) {
-//                startActivity(new Intent(getApplicationContext(), AccountActivity.class));
-//                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-//                finish();
-//                return true;
-//            }
             return false;
         });
 

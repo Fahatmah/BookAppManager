@@ -23,7 +23,7 @@
             android:background="@drawable/white_bg"
             android:fontFamily="@font/space_grotesk_bold"
             android:padding="20dp"
-            android:text="CONTINUE"
+            android:text="@string/continueBtnTxt"
             android:textColor="@color/purple"
             android:textSize="18sp"
             />

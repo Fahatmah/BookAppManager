@@ -1,27 +1,47 @@
 <resources>
     <string name="app_name">Book App Manager</string>
-    <string name="app_name_logo">BookAppManager</string>
+    <string name="backButton">Go back to previous activity</string>
+    <string name="continueBtnTxt">Continue</string>
+    <string name="loadingTxt">Loading…</string>
+    <string name="recTitle">Title</string>
+    <string name="recAuthor">Author</string>
+    <string name="recBookCover">Book Cover</string>
+
+    // Books Activity
+    <string name="bookHeader">Books</string>
+    <string name="naba">Navigate to Add Book Activity</string>
+
+    // Add Book Activity
+    <string name="addBookHeader">Add Book</string>
+    <string name="labelAddBookName">Book Name</string>
+    <string name="hintAddBookName">e.g. Atomic Habits</string>
+    <string name="labelAddBookDesc">Book Description</string>
+    <string name="hintAddBookDesc">e.g. "Atomic Habits" by James Clear is a comprehensive guide on how small changes in behavior can lead to remarkable results in personal and professional life. Clear emphasizes that habits are the compound interest of self-improvement.</string>
+    <string name="labelAddBookAuthor">Author Name</string>
+    <string name="hintAddBookAuthor">e.g. James Clear</string>
+    <string name="labelAddBookCover">Book Cover</string>
+    <string name="hintAddBookCover">Book Cover</string>
+    <string name="addBookButton">Save Book</string>
+
+    // Book Detail Activity
+    <string name="bookDetailHeader">Book Detail</string>
+    <string name="bookTitle">Book Title</string>
+    <string name="labelBookAuthor">Author</string>
+    <string name="labelBookDesc">Description</string>
+
+    // Update Books Activity
+    <string name="updateBookDetailHeader">Update Book</string>
+    <string name="labelUpdateBookName">Update Book Title</string>
+    <string name="hintUpdateBookTitle">Book Title</string>
+    <string name="labelUpdateBookDesc">Update Book Description/Summary</string>
+    <string name="hintUpdateBookDesc">Description</string>
+    <string name="labelUpdateBookAuthor">Update Author Name</string>
+    <string name="hintUpdateBookAuthor">Author Name</string>
+    <string name="labelUpdateBookCover">Update Book Cover</string>
+    <string name="hintUpdateBookCover">Book Cover</string>
+    <string name="updateBookButton">Update Book</string>
+
+    // Test Activity
     <string name="testTxt">This is a test file.</string>
     <string name="testPullRequest">Testing Pull Request.</string>
-    <string name="desc">"Atomic Habits" by James Clear is a comprehensive guide on how small changes in behavior can lead to remarkable results in personal and professional life. Clear emphasizes that habits are the compound interest of self-improvement. Here are the key takeaways from the book:
-
-The Power of Tiny Changes: Small habits, when repeated consistently, compound over time and can lead to significant improvements. Clear argues that 1% improvements every day can result in major progress.
-
-The Four Laws of Behavior Change: Clear introduces a framework for building good habits and breaking bad ones. These laws are:
-
-Make It Obvious: Create cues that make it easy to start a new habit.
-Make It Attractive: Associate positive emotions with the habit to make it appealing.
-Make It Easy: Reduce the friction to perform the habit; simplicity is key.
-Make It Satisfying: Implement immediate rewards to reinforce the habit.
-Identity-Based Habits: Rather than focusing solely on outcomes, Clear suggests focusing on the type of person you want to become. Habits are a way to embody the identity you aspire to. For instance, instead of saying "I want to run a marathon," say "I am a runner."
-
-Habit Stacking: This technique involves pairing a new habit with an existing one. By linking behaviors, you create a chain of actions that are easier to remember and execute.
-
-Environment Design: The environment plays a crucial role in shaping habits. Clear advises designing your surroundings to make good habits more accessible and bad habits harder to perform.
-
-Tracking and Accountability: Monitoring your habits helps maintain progress and accountability. Clear discusses the importance of tracking habits and having accountability partners or systems in place.
-
-Overcoming Plateaus: Progress is often non-linear, and plateaus are a natural part of the process. Clear provides strategies to overcome these plateaus, such as revisiting your system, making adjustments, and maintaining patience.
-
-Overall, "Atomic Habits" offers practical strategies and insights backed by scientific research to help individuals create lasting positive changes by focusing on small, manageable actions.</string>
 </resources>

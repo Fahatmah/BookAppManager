@@ -88,6 +88,7 @@ public class UpdateBookActivity extends AppCompatActivity {
             updateBookAuthor.setText(bundle.getString("Author"));
             key = bundle.getString("Key");
             oldBookCoverURL = bundle.getString("Cover");
+            Glide.with(this).load(bundle.getString("Cover")).into(updateBookCover);
         }
         databaseReference = FirebaseDatabase.getInstance().getReference("Books").child(key);
         updateBookCover.setOnClickListener(new View.OnClickListener() {
